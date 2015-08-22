@@ -1,0 +1,39 @@
+Coursera Data Science: SwiftKey App Presentation
+========================================================
+author: Jagdeep S. Sihota
+date: 8-20-2015
+
+
+========================================================
+
+Introduction
+
+The objective of this capstone project is to develop a Shiny App that will predict the next word of an incomplete phrase.
+
+
+========================================================
+
+The Algorithm and How it Works!
+
+The algorithm built for this project is based on an n-gram model.
+The prediction model utilized a random sample of the following English data (Twitter, News, Blogs) https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip
+The texts were cleaned by removing numbers, profanity, and other problematic texts.
+Text were distributed into bigrams, trigrams, and unigrams. The Ngrams were then created.
+The app utilizes the (N-1) probabilistic method by using the previous words in a sentence sequence to predict the next word.
+The last two tokens of the user's phrase are run only if the last three words are not in the trigram.
+========================================================
+
+How to use the Application
+
+One of the great advantages of this application is that it is extremely fast with almost no delay. It takes less than three seconds sometimes to predict the next word in a phrase.
+
+It is very intuitive and anyone in the world can write out simple English phrases.
+To work the app all you need to do is type in your incomplete phrase in the text box underneath where it says 'Phrase'. Once you hit submit, the sentence will be displayed on the right, under where it says 'Phrase Entered', along with the predicted word at the very end.
+
+========================================================
+Conclusions
+
+The prediction accuracy of the model is approximately 20%. Possible improvements to this app include:
+
+Rather than just using one word suggestion, the app could use 2-3 word suggestions along with their probability.
+Incorporate more data, so the predictions will be more accurate.

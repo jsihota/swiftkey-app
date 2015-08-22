@@ -10,7 +10,6 @@ shinyUI(fluidPage(
   hr(),
   
 fluidRow(
-    
   column(4, offset = 1,
        h4("Best Next Single Word Predicted"),
        verbatimTextOutput("best")
